@@ -1,158 +1,174 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 
 
+	android:layout_margin="20dp"
+	android:background="#2cc179"
 	android:orientation="horizontal">
 
-	<TableLayout
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_marginLeft="20sp"
-		android:layout_marginRight="20sp"
-		android:stretchColumns="4">
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#2cc179"
+		android:textAlignment="center">
 
-		<TableRow
+		<LinearLayout
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
-			android:layout_marginTop="30sp">
+			android:background="#2cc179"
+			android:orientation="vertical">
 
-			<ImageButton
-				android:id="@+id/imageButton"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:onClick="seeAvailPlantsEntry"
-				android:src="@mipmap/ic_launcher" />
-
-			<ImageButton
-				android:id="@+id/imageButton2"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:onClick="seeAvailPlantsEntry"
-				android:src="@mipmap/ic_launcher" />
-
-			<ImageButton
-				android:id="@+id/imageButton8"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:onClick="seeAvailPlantsEntry"
-				android:src="@mipmap/ic_launcher" />
-
-			<ImageButton
-				android:id="@+id/imageButton9"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:onClick="seeAvailPlantsEntry"
-				android:src="@mipmap/ic_launcher" />
-		</TableRow>
-
-		<TableRow
-			android:layout_width="match_parent"
-			android:layout_height="match_parent">
+			<ImageView
+				android:id="@+id/imageView5"
+				android:layout_width="match_parent"
+				android:layout_height="200dp"
+				android:onClick="seeBaguioBeans"
+				android:src="@drawable/baguio_beans" />
 
 			<TextView
-				android:id="@+id/textView17"
-				android:layout_width="wrap_content"
+				android:id="@+id/textView11"
+				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:text="veg 1" />
+				android:text="Baguio Beans"
+				android:textAlignment="center" />
+
+			<ImageView
+				android:id="@+id/imageView6"
+				android:layout_width="match_parent"
+				android:layout_height="200dp"
+				android:layout_marginTop="30dp"
+				android:onClick="seeBrocolli"
+				android:src="@drawable/brocolli" />
 
 			<TextView
-				android:id="@+id/textView16"
-				android:layout_width="wrap_content"
+				android:id="@+id/textView12"
+				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:text="veg 2" />
+				android:text="Brocolli"
+				android:textAlignment="center" />
+
+			<ImageView
+				android:id="@+id/imageView9"
+				android:layout_width="match_parent"
+				android:layout_height="200dp"
+				android:layout_marginTop="30dp"
+				android:onClick="seeCabbage"
+				android:src="@drawable/cabbage" />
 
 			<TextView
 				android:id="@+id/textView13"
-				android:layout_width="wrap_content"
+				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:text="veg 3" />
+				android:text="Cabbage"
+				android:textAlignment="center" />
+
+			<ImageView
+				android:id="@+id/imageView11"
+				android:layout_width="match_parent"
+				android:layout_height="200dp"
+				android:layout_marginTop="30dp"
+				android:onClick="seeCauliflower"
+				android:scaleX="1.10"
+				android:src="@drawable/cauliflower" />
 
 			<TextView
 				android:id="@+id/textView14"
-				android:layout_width="wrap_content"
+				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:text="veg 4" />
-		</TableRow>
+				android:text="Cauliflower"
+				android:textAlignment="center" />
 
-		<TableRow
-			android:layout_width="match_parent"
-			android:layout_height="match_parent"
-			android:layout_marginTop="70sp">
+			<ImageView
+				android:id="@+id/imageView12"
+				android:layout_width="match_parent"
+				android:layout_height="200dp"
+				android:layout_marginTop="30dp"
+				android:onClick="seeCarrots"
+				android:scaleX="0.83"
+				android:src="@drawable/carrots" />
 
-			<ImageButton
-				android:id="@+id/imageButton10"
-				android:layout_width="wrap_content"
+			<TextView
+				android:id="@+id/textView15"
+				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:onClick="seeAvailPlantsEntry"
-				android:src="@mipmap/ic_launcher" />
+				android:text="Carrots"
+				android:textAlignment="center" />
 
-			<ImageButton
-				android:id="@+id/imageButton11"
-				android:layout_width="wrap_content"
+			<ImageView
+				android:id="@+id/imageView13"
+				android:layout_width="match_parent"
+				android:layout_height="200dp"
+				android:layout_marginTop="30dp"
+				android:onClick="seeLettuce"
+				android:src="@drawable/lettuce" />
+
+			<TextView
+				android:id="@+id/textView16"
+				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:onClick="seeAvailPlantsEntry"
-				android:src="@mipmap/ic_launcher" />
+				android:text="Lettuce"
+				android:textAlignment="center" />
 
-			<ImageButton
-				android:id="@+id/imageButton12"
-				android:layout_width="wrap_content"
+			<ImageView
+				android:id="@+id/imageView14"
+				android:layout_width="match_parent"
+				android:layout_height="200dp"
+				android:layout_marginTop="30dp"
+				android:onClick="seePotato"
+				android:scaleX="1.1"
+				android:src="@drawable/potato"
+				android:textAlignment="center" />
+
+			<TextView
+				android:id="@+id/textView17"
+				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:onClick="seeAvailPlantsEntry"
-				android:src="@mipmap/ic_launcher" />
+				android:text="Potato"
+				android:textAlignment="center" />
 
-			<ImageButton
-				android:id="@+id/imageButton13"
-				android:layout_width="wrap_content"
+			<ImageView
+				android:id="@+id/imageView15"
+				android:layout_width="match_parent"
+				android:layout_height="200dp"
+				android:layout_marginTop="30dp"
+				android:onClick="seeSayote"
+				android:scaleX="0.87"
+				android:src="@drawable/sayote" />
+
+			<TextView
+				android:id="@+id/textView18"
+				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:src="@mipmap/ic_launcher" />
+				android:text="Sayote"
+				android:textAlignment="center" />
 
-		</TableRow>
-
-		<TableRow
-			android:layout_width="match_parent"
-			android:layout_height="match_parent">
+			<ImageView
+				android:id="@+id/imageView16"
+				android:layout_width="match_parent"
+				android:layout_height="200dp"
+				android:layout_marginTop="30dp"
+				android:onClick="seeStrawberry"
+				android:scaleX="0.85"
+				android:src="@drawable/strawberry" />
 
 			<TextView
 				android:id="@+id/textView19"
-				android:layout_width="wrap_content"
+				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:text="veg 5" />
-
-			<TextView
-				android:id="@+id/textView20"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="veg 6" />
-
-			<TextView
-				android:id="@+id/textView21"
-				android:layout_width="wrap_content"
-				android:layout_height="match_parent"
-				android:text="veg 7'" />
-
-			<TextView
-				android:id="@+id/textView22"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="veg 8" />
-
-		</TableRow>
-
-		<TableRow
-			android:layout_width="match_parent"
-			android:layout_height="match_parent" >
+				android:text="Strawberry"
+				android:textAlignment="center" />
 
 			<Button
 				android:id="@+id/button2"
-				android:layout_width="wrap_content"
+				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:layout_marginTop="70sp"
-				android:layout_weight="1"
-				android:onClick="getStarted"
+				android:onClick="homePage"
 				android:text="Back" />
-		</TableRow>
-	</TableLayout>
-</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+
+</RelativeLayout>
